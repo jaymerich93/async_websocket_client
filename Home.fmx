@@ -1,0 +1,133 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  DesignerMasterStyle = 0
+  object commandsPanel: TPanel
+    Align = Right
+    Padding.Left = 32.000000000000000000
+    Padding.Right = 16.000000000000000000
+    Position.X = 460.000000000000000000
+    Size.Width = 180.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object command1Button: TButton
+      Align = Top
+      Position.X = 32.000000000000000000
+      Size.Width = 132.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Command 1'
+      TextSettings.Trimming = None
+      OnClick = command1ButtonClick
+    end
+    object command4Button: TButton
+      Align = Top
+      Margins.Top = 16.000000000000000000
+      Position.X = 32.000000000000000000
+      Position.Y = 114.000000000000000000
+      Size.Width = 132.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Command 4'
+      TextSettings.Trimming = None
+      OnClick = command4ButtonClick
+    end
+    object command3Button: TButton
+      Align = Top
+      Margins.Top = 16.000000000000000000
+      Position.X = 32.000000000000000000
+      Position.Y = 76.000000000000000000
+      Size.Width = 132.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Command 3'
+      TextSettings.Trimming = None
+      OnClick = command3ButtonClick
+    end
+    object command2Button: TButton
+      Align = Top
+      Margins.Top = 16.000000000000000000
+      Position.X = 32.000000000000000000
+      Position.Y = 38.000000000000000000
+      Size.Width = 132.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Command 2'
+      TextSettings.Trimming = None
+      OnClick = command2ButtonClick
+    end
+  end
+  object clientPanel: TPanel
+    Align = MostLeft
+    Size.Width = 230.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object clientLogMemo: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Client
+      Size.Width = 230.000000000000000000
+      Size.Height = 447.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 226.000000000000000000
+      Viewport.Height = 443.000000000000000000
+    end
+    object Label1: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 230.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Trimming = None
+      Text = 'Client log'
+      TabOrder = 1
+    end
+  end
+  object serverPanel: TPanel
+    Align = Left
+    Position.X = 230.000000000000000000
+    Size.Width = 230.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object serverLogMemo: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Client
+      Size.Width = 230.000000000000000000
+      Size.Height = 447.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 226.000000000000000000
+      Viewport.Height = 443.000000000000000000
+    end
+    object Label2: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 230.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Trimming = None
+      Text = 'Server log'
+      TabOrder = 1
+    end
+  end
+end
